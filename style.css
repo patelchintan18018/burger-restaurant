@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.logo, .header-text,.about-heading, .menu-heading, .contact-heading{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========NAVBAR=========== */
+.logo{
+    font-size: 2em;
+}
+
+.nav-link{
+    position: relative;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+    transform-origin: left;
+
+}
+.nav-link:hover::before , .active{
+    width: 100%;
+}
+
+
+/* ==============HOME ===================*/
+
+
+#Home{
+    position: relative;
+    background: url(./image/pexels-rachel-claire-5491013.jpg);
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+#Home::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+ 
+.header-text{
+   
+    padding-top: 70vh;
+    padding-left: 2em;
+    font-weight: 200;
+    letter-spacing: 10px;
+}
+
+
+/* =========SECTION 1 ABOUT =========*/
+
+.space{
+    letter-spacing: 8px;
+}
+
+.about-img{
+    width: 100%;
+    height: 90vh;
+    background: url("./image/pexels-dapur-melodi-1109197.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* SECTION 2 MENU */
+/* .menu-img{
+    
+    width: 100%;
+    height: 90vh;
+    background: url("./image/pexels-rodnae-productions-6004206.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.menu-item p{
+    font-size: .95em;
+    font-weight: 100;
+}
+
+
+
+/* CONTACT */
+
+.address{
+    color: cornflowerblue;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+    
+
+
+.form input{
+    width: 100%;
+    margin-top: 2em;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid black;
+}
